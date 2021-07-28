@@ -10,6 +10,7 @@
   line-height: 18px;
   font-weight: 400;
   color: $alt-font_color;
+  text-transform: uppercase;
 }
 
 .select-of-prog__chapter {
@@ -43,6 +44,18 @@
   color: $main-font_color;
 }
 
+.select-of-prog__label [type="text"] {
+  font-family: $main-font;
+  text-transform: uppercase;
+  color: $main-font_color;
+}
+
+.select-of-prog__label [type="number"] {
+  font-family: $main-font;
+  text-transform: uppercase;
+  color: $main-font_color;
+}
+
 .select-of-prog__label--radio {
   color: $font-color_radio;
 }
@@ -52,6 +65,7 @@
 }
 
 .select-of-prog__comment {
+  font-family: $main-font;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -63,3 +77,16 @@
   font-family: $main-font;
   color: $main-font_color;
 }
+
+
+.select-of-prog__button {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.select-of-prog__aside {
+  font-family: $alt-font;
+}
+
