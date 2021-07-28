@@ -1,0 +1,27 @@
+.additional-product__headline {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $alt-font_color;
+}
+
+.additional-product__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.additional-product__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $alt-font_color;
+  text-transform: uppercase;
+}
+
+.additional-product__desc {
+  font-family: $alt-font;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+}

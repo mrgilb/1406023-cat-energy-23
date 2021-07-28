@@ -1,0 +1,17 @@
+/* .main-nav {
+
+} */
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item a {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $alt-font_color;
+  text-decoration: none;
+}

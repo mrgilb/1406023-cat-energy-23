@@ -1,0 +1,23 @@
+.address {
+  background-color: #ffffff;
+}
+
+.address--bg-transparent {
+  background-color: transparent;
+}
+
+.address__tittle {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $alt-font_color;
+  text-transform: uppercase;
+}
+
+.address__text {
+  font-family: $alt-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-style: normal;
+}

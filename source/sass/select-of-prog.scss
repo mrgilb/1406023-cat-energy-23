@@ -1,0 +1,91 @@
+.select-of-prog__headline {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $alt-font_color;
+}
+
+.select-of-prog__desc {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $alt-font_color;
+  text-transform: uppercase;
+}
+
+.select-of-prog__chapter {
+  border: none;
+}
+
+.select-of-prog__title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $alt-font_color;
+}
+
+.select-of-prog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.select-of-prog__label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.select-of-prog__label input::placeholder {
+  font-family: $main-font;
+  text-transform: uppercase;
+  color: $main-font_color;
+}
+
+.select-of-prog__label [type="text"] {
+  font-family: $main-font;
+  text-transform: uppercase;
+  color: $main-font_color;
+}
+
+.select-of-prog__label [type="number"] {
+  font-family: $main-font;
+  text-transform: uppercase;
+  color: $main-font_color;
+}
+
+.select-of-prog__label--radio {
+  color: $font-color_radio;
+}
+
+.select-of-prog__label--checkbox {
+  color: $alt-font_color;
+}
+
+.select-of-prog__comment {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $main-font_color;
+  text-transform: uppercase;
+}
+
+.select-of-prog__comment::placeholder {
+  font-family: $main-font;
+  color: $main-font_color;
+}
+
+
+.select-of-prog__button {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.select-of-prog__aside {
+  font-family: $alt-font;
+}

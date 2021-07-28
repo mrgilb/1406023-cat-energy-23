@@ -1,0 +1,48 @@
+.cars_headline {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $alt-font_color;
+}
+
+.cards__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $alt-font_color;
+  text-transform: uppercase;
+}
+
+.cards__item a {
+  text-decoration: none;
+}
+
+.cards__desc {
+  font-family: $alt-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.cards__text {
+  font-family: $alt-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.cards__last-button {
+  background-color: $main-background;
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-font_color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
