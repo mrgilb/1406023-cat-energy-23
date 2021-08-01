@@ -1,3 +1,54 @@
 .main-footer {
   background-color: $main-background;
+  display: grid;
+}
+
+.main-footer .address {
+  @media (min-width: $tablet-resolution) {
+    grid-row: 1/2;
+    grid-column: 1/4;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    z-index: 1;
+    width: 570px;
+    margin: 50px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+}
+
+.main-footer .map {
+  @media (min-width: $tablet-resolution) {
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    grid-row: 2/3;
+    grid-column: 1/4;
+  }
+}
+
+.main-footer .alt-main-logo {
+  @media (min-width: $tablet-resolution) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+}
+
+.main-footer .wrapper {
+  @media (min-width: $tablet-resolution) {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    width: 100%;
+  }
+}
+
+.main-footer .producer-logo {
+  @media (min-width: $tablet-resolution) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
 }

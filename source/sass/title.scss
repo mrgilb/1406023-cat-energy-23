@@ -1,6 +1,21 @@
 .title {
   background-image: url("../img/greencat-bg.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-resolution) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    background-image: url("../img/greencat-bg.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.title .wrapper {
+  min-height: 480px;
+  display: grid;
+  grid-column: min-content;
 }
 
 .title__tagline {
@@ -8,6 +23,10 @@
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
+
+  @media (min-width: $tablet-resolution) {
+    color: $alt-font_color;
+  }
 }
 
 .title__text {
@@ -16,4 +35,30 @@
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-resolution) {
+    color: $alt-font_color;
+  }
+}
+
+.title__img-product {
+  @media (min-width: $tablet-resolution) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    grid-row: 1/-1;
+    grid-column: 2/3;
+  }
+}
+
+.title__button {
+  width: 280px;
+  height: 40px;
+
+  @media (min-width: $tablet-resolution) {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
 }

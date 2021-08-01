@@ -1,10 +1,30 @@
+.services {
+  display: flex;
+}
+
 .services__list {
   margin: 0;
   padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $desktop-resolution) {
+    justify-content: space-between;
+  }
 }
 
 .services__item {
   background-color: $main-background;
+
+  @media (min-width: $tablet-resolution) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    width: 570px;
+  }
 }
 
 .services__title {

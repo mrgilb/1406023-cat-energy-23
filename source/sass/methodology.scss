@@ -6,7 +6,15 @@
 }
 
 .methodology__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-resolution) {
+    justify-content: space-between;
+  }
 }
 
 .methodology__item {
@@ -14,4 +22,13 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+  width: 200px;
+
+  @media (min-width: $tablet-resolution) {
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    width: 213px;
+  }
 }
