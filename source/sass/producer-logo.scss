@@ -5,4 +5,11 @@
   font-weight: 400;
   color: $main-font_color;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-resolution) {
+    width: 163px;
+    margin: 0;
+  }
 }

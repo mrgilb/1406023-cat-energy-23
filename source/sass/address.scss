@@ -2,16 +2,35 @@
   background-color: #ffffff;
 }
 
+.address .wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-resolution) {
+    width: 625px;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    width: 100%;
+  }
+}
+
 .address--bg-transparent {
   background-color: transparent;
 }
 
 .address__tittle {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: $alt-font_color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-resolution) {
+    width: 163px;
+  }
 }
 
 .address__text {
@@ -20,4 +39,8 @@
   line-height: 20px;
   font-weight: 400;
   font-style: normal;
+
+  @media (min-width: $tablet-resolution) {
+    width: 155px;
+  }
 }
