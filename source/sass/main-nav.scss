@@ -13,24 +13,21 @@
 }
 
 .main-nav__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-  position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  margin-top: 50px;
+  margin-top: 20px;
 
   @media (min-width: $tablet-resolution) {
-    position: static;
     margin-top: 0;
     display: flex;
   }
 
   @media (min-width: $desktop-resolution) {
-    position: static;
     margin-top: 0;
     display: flex;
   }
@@ -38,7 +35,7 @@
 
 .main-nav__item {
   text-align: center;
-  /* background-color: $font_button-color; */
+  background-color: $font_button-color;
 }
 
 .main-nav__list--disabled {

@@ -15,22 +15,22 @@
           <button class="main-nav__toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list main-nav__list--disabled">
+          <ul class="main-nav__list">
             <li class="main-nav__item"><a href="">главная</a></li>
             <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
             <li class="main-nav__item"><a href="form.html">подбор программы</a></li>
           </ul>
       </nav>
-      <section class="title">
-        <div class="wrapper">
-          <h1 class="title__tagline">Функциональное
-            питание для котов</h1>
-          <p class="title__text">Занялся собой? Займись котом!</p>
-          <img class="title__img-product" src="img/product-presentation.png" width="280" height="270" alt="Изображение товара">
-          <a href="form.html" class="title__button button">подобрать программу</a>
-        </div>
-      </section>
     </header>
+    <section class="title">
+      <div class="wrapper">
+        <h1 class="title__tagline">Функциональное
+          питание для котов</h1>
+        <p class="title__text">Занялся собой? Займись котом!</p>
+        <img class="title__img-product" src="img/product-presentation.png" width="280" height="270" alt="Изображение товара">
+        <a href="form.html" class="title__button button">подобрать программу</a>
+      </div>
+    </section>
     <main class="main-page index">
       <section class="services wrapper">
         <h2 class="visually-hidden">Нашу услуги</h2>
@@ -71,13 +71,15 @@
             <li class="example__item">5 КГ<br><span class="example__definition">снижение веса</span></li>
             <li class="example__item">60 ДНЕЙ<span class="example__definition"><br>затрачено времени</span></li>
           </ul>
+          <p class="example__illustration-title">Затраты на питание: 15 000 РУБ.</p>
           <figure class="example__illustration">
-            <figcaption>Затраты на питание: 15 000 РУБ.</figcaption>
             <img class="example__fat-cat" src="img/cat-fat.png" width="677" height="520" alt="Толстый серый котик с глазами разного цвета и белым воротничком">
             <img class="example__skinny-cat" src="img/cat-skinny.png" width="545" height="520" alt="Тот же котик что и не первом изображении, но заметно похудевший">
-            <button class="example__button">было</button>
-            <input type="range" class="example__input">
-            <button class="example__button">стало</button>
+            <div class="exampe__controls">
+              <button class="example__button">было</button>
+              <input type="range" class="example__input">
+              <button class="example__button">стало</button>
+            </div>
           </figure>
         </div>
       </section>
@@ -93,10 +95,10 @@
         </div>
       </section>
       <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627212394809!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-      <a class="alt-main-logo" href="#">
-        <img src="img/logo/mainlogo.svg" width="128" height="24" alt="logo">
-      </a>
       <div class="wrapper">
+        <a class="alt-main-logo" href="#">
+          <img src="img/logo/mainlogo.svg" width="128" height="24" alt="logo">
+        </a>
         <ul class="social-list">
           <li class="social__item">
             <a href="">
@@ -123,11 +125,11 @@
             </a>
           </li>
         </ul>
-      </div>
-      <a class="producer-logo wrapper" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
-        </svg>
+        <a class="producer-logo wrapper" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy<svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="#666666"/>
+          </svg>
         </a>
+      </div>
     </footer>
 
 
