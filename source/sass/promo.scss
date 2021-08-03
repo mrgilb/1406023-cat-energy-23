@@ -1,4 +1,4 @@
-.title {
+.promo {
   background-image: url("../img/greencat-bg.png");
   background-repeat: no-repeat;
 
@@ -12,13 +12,13 @@
   }
 }
 
-.title .wrapper {
+.promo .wrapper {
   min-height: 480px;
   display: grid;
   grid-column: min-content;
 }
 
-.title__tagline {
+.promo__tagline {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -29,7 +29,7 @@
   }
 }
 
-.title__text {
+.promo__text {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -41,7 +41,7 @@
   }
 }
 
-.title__img-product {
+.promo__img-product {
   @media (min-width: $tablet-resolution) {
     grid-row: 3/4;
     grid-column: 1/2;
@@ -53,7 +53,7 @@
   }
 }
 
-.title__button {
+.promo__button {
   width: 280px;
   height: 40px;
 
