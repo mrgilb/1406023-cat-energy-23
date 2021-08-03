@@ -5,6 +5,7 @@
 .address .wrapper {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 
   @media (min-width: $tablet-resolution) {
     width: 625px;

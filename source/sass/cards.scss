@@ -16,16 +16,33 @@
 .cards__item {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: min-content min-content;
-  grid-template-rows: min-content min-content min-content;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 
   @media (min-width: $tablet-resolution) {
+    min-width: 324px;
     margin-top: 50px;
     margin-right: 60px;
     margin-bottom: 60px;
     margin-left: 0;
-    grid-template-columns: min-content;
-    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content min-content min-content;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    min-width: 245px;
+  }
+}
+
+.cards__item:nth-child(even) {
+  @media (min-width: $tablet-resolution) and (max-width: $desktop-resolution) {
+    margin-right: 0;
+  }
+}
+
+.cards__item:nth-child(4n) {
+  @media (min-width: $desktop-resolution) {
+    margin-right: 0;
   }
 }
 
@@ -57,10 +74,24 @@
 }
 
 .cards__desc {
+  margin: 0;
+  padding: 0;
   font-family: $alt-font;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.cards__desc dt {
+  margin: 0;
+  padding: 0;
+}
+
+.cards__desc dd {
+  margin: 0;
+  padding: 0;
 }
 
 .cards__item .button {
