@@ -9,14 +9,15 @@
   <body class="body-page">
     <header class="page-header">
         <nav class="main-nav wrapper header-grid">
-          <a href="#" class="logo">
+          <a class="logo">
             <img class="logo__img" src="img/logo/catenergy.svg" width="33" height="38" alt="logo"><img class="logo__text" src="img/logo/mainlogo.svg" width="101" height="18" alt="logo">
           </a>
-          <button class="main-nav__toggle">
+          <button class="main-nav__toggle main-nav__toggle--active">
+            <span class="main-nav__burger"></span>
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="">главная</a></li>
+          <ul class="main-nav__list main-nav__list--nojs main-nav__list--active">
+            <li class="main-nav__item main-nav__item--active"><a>главная</a></li>
             <li class="main-nav__item"><a href="catalog.html">каталог продукции</a></li>
             <li class="main-nav__item"><a href="form.html">подбор программы</a></li>
           </ul>
@@ -131,7 +132,6 @@
         </a>
       </div>
     </footer>
-
-
+    <script src="js/script.js"></script>
   </body>
 </html>
