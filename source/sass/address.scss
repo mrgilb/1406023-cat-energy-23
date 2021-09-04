@@ -1,5 +1,11 @@
 .address {
   background-color: #ffffff;
+  padding-top: 28px;
+  padding-bottom: 25px;
+}
+
+.address--catalog {
+  background-color: $catalog_button-color;
 }
 
 .address .wrapper {
@@ -8,7 +14,7 @@
   flex-direction: row;
 
   @media (min-width: $tablet-resolution) {
-    width: 625px;
+    width: $tablet-width;
   }
 
   @media (min-width: $desktop-resolution) {
@@ -20,9 +26,11 @@
   background-color: transparent;
 }
 
+
 .address__tittle {
   margin: 0;
   padding: 0;
+  min-width: 139px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -31,6 +39,16 @@
 
   @media (min-width: $tablet-resolution) {
     width: 163px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 39px;
+    margin-left: 40px;
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    margin-left: 76px;
+    margin-top: 34px;
   }
 }
 
@@ -43,5 +61,21 @@
 
   @media (min-width: $tablet-resolution) {
     width: 155px;
+    font-size: 16px;
+    text-align: end;
+    margin-right: 42px;
+    margin-top: 3px;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    text-align: start;
+    margin-right: 89px;
+  }
+}
+
+.address__text span {
+  @media (min-width: $tablet-resolution) {
+    display: block;
+    margin-top: 21px;
   }
 }

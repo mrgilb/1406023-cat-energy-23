@@ -1,3 +1,11 @@
-/* .alt-main-logo {
-  justify-self: start;
-} */
+.alt-main-logo {
+  margin-top: 39px;
+
+  @media (min-width: $tablet-resolution) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    margin-top: 27px;
+  }
+}
