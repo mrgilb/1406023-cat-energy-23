@@ -49,6 +49,7 @@
       </defs>
     </symbol>
   </svg>
+<header>
   <nav class="main-nav header-grid">
     <div class="wrapper">
       <a class="logo">
@@ -84,8 +85,8 @@
         </p>
       </div>
       <fieldset class="select-of-prog__chapter">
+        <legend class="select-of-prog__title visually-hidden">Введите имя, вес и возраст вашего питомца</legend>
         <div class="wrapper">
-          <legend class="select-of-prog__title visually-hidden">Введите имя, вес и возраст вашего питомца</legend>
           <ul class="select-of-prog__list">
             <li class="select-of-prog__item">
               <label for="first-name" class="select-of-prog__label">
@@ -94,7 +95,7 @@
               <input class="select-of-prog__input" id="first-name" type="text" name="weight" placeholder="барсик">
             </li>
             <li class="select-of-prog__item">
-              <label id="main-weight" class="select-of-prog__label">
+              <label for="main-weight" class="select-of-prog__label">
                 вес (кг):*
               </label>
               <input class="select-of-prog__input" id="main-weight" type="number" name="weight" placeholder="7">
@@ -109,8 +110,8 @@
         </div>
       </fieldset>
       <fieldset class="select-of-prog__chapter">
+        <legend class="select-of-prog__title visually-hidden">Выберите тип программы</legend>
         <div class="wrapper">
-          <legend class="select-of-prog__title visually-hidden">Выберите тип программы</legend>
           <ul class="select-of-prog__list">
             <li class="select-of-prog__item">
               <input class="visually-hidden select-of-prog__input" type="radio" id="slimming" name="type"
@@ -166,7 +167,7 @@
           <h3 class="wrapper">Комментарий</h3>
         </legend>
         <div class="wrapper">
-          <textarea class="select-of-prog__comment" name="form-comment" id="" cols="30" rows="10"
+          <textarea class="select-of-prog__comment" name="form-comment" cols="30" rows="10"
             placeholder="Расскажите обо всех повАдках кота"></textarea>
         </div>
       </fieldset>
