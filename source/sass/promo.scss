@@ -1,5 +1,7 @@
 .promo {
-  background: linear-gradient(to bottom, #64a839 63%, #ffffff 0%);
+  background: linear-gradient(to bottom, transparent -2.1%, rgba(104, 183, 56, 0.85) -2.1%);
+  background-repeat: no-repeat;
+  background-size: 100% 303px;
 
   @media (min-width: $tablet-resolution) {
     background-image: none;
@@ -13,13 +15,6 @@
 .promo .wrapper {
   min-height: 480px;
   display: grid;
-  background-image: url("../img/greencat-bg.png");
-  background-repeat: no-repeat;
-  background-position-x: 50%;
-
-  @media (min-width: $tablet-resolution) {
-    background-image: none;
-  }
 
   @media (min-width: $desktop-resolution) {
     grid-template-columns: 1fr 1fr;

@@ -4,6 +4,14 @@
   height: 100%;
   margin: 0;
   padding: 0;
+  background-image: url("../img/greencat-bg.png");
+  background-position-x: 50%;
+  background-position-y: 2.5%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-resolution) {
+    background: none;
+  }
 
   @media (min-width: $desktop-resolution) {
     background: linear-gradient(to right, #68b738 100%, #68b738 0%);
