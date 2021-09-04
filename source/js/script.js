@@ -48,8 +48,3 @@ function imageSize() {
   skinnyCat.style.width = 100 - inputRange.value + "%";
   background.style.setProperty('--color-divide', (inputRange.value/2)+ 2.4 + '%');
 }
-
-
-
-
-
