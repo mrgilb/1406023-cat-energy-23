@@ -9,7 +9,13 @@
 
   @media (min-width: $desktop-resolution) {
     grid-template-columns: 1fr $desktop-width 1fr;
+    position: relative;
+    z-index: 5;
   }
+}
+
+.main-footer--catalog {
+  margin-top: 35px;
 }
 
 .main-footer .address {
@@ -25,7 +31,7 @@
     grid-column: 2/3;
     z-index: 1;
     width: 570px;
-    margin: 50px 0 50px 0;
+    margin: 95px 0 106px 0;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
   }
 }
@@ -50,6 +56,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   @media (min-width: $tablet-resolution) {
     flex-direction: row;

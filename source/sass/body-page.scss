@@ -4,6 +4,34 @@
   height: 100%;
   margin: 0;
   padding: 0;
+  background-image: url("../img/greencat-bg.png");
+  background-position-x: 50%;
+  background-position-y: 2.5%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-resolution) {
+    background: none;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    background: linear-gradient(to right, #68b738 100%, #68b738 0%);
+    background-image: url("../img/greencat-bg-desktop.png");
+    background-repeat: no-repeat;
+    background-size: 1044px 694px;
+    background-position-x: 720px;
+    background-position-y: -2px;
+  }
+
+  @media (min-width: 1441px) {
+    background-size: 50%;
+    background-position-x: right;
+  }
+}
+
+.body-page--inner {
+  @media (min-width: $desktop-resolution) {
+    background: none;
+  }
 }
 
 .visually-hidden {
