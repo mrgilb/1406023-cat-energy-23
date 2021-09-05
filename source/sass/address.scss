@@ -24,6 +24,10 @@
 
 .address--bg-transparent {
   background-color: transparent;
+
+  @media (min-width: $desktop-resolution) {
+    background-color: #ffffff;
+  }
 }
 
 

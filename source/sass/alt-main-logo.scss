@@ -1,6 +1,18 @@
 .alt-main-logo {
   margin-top: 39px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-resolution) {
     margin-top: 24px;
   }

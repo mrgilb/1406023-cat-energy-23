@@ -3,6 +3,11 @@
   min-height: 289px;
   margin-top: 38px;
   background-image: url("../img/bg-present.png");
+  background-size: 280px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-present@2x.png");
+  }
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -14,10 +19,20 @@
     flex-direction: row;
     margin-top: 64px;
     background-image: url("../img/bg-present-tablet.png");
+    background-size: 707px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-present-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-resolution) {
     background-image: url("../img/bg-present-desktop.png");
+    background-size: 245px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-present-desktop@2x.png");
+    }
     margin-top: 64px;
   }
 }

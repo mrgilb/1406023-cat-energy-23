@@ -372,6 +372,18 @@
     border-bottom: 1px dotted $radio-border;
     position: relative;
     z-index: 1;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0%, 0%, 0%, 0.4);
+    }
+
+    &:focus {
+      border-bottom: 1px solid rgba(0%, 0%, 0%, 0.4);
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 }
 
@@ -407,6 +419,7 @@
   transform: rotate(180deg);
 
   @media (min-width: $tablet-resolution) {
+    transform: rotate(0deg);
     border: none;
     width: 428px;
     height: 6px;
@@ -430,6 +443,20 @@
     border: 13px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 0 1px #cdcdcd;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:focus {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $icons-focus_hover;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
   }
 }
 
@@ -449,5 +476,18 @@
     border: 13px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 0 0 1px #cdcdcd;
+
+    &:hover {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:focus {
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      box-shadow: 0 0 0 1px $icons-focus_hover;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
+    }
   }
 }

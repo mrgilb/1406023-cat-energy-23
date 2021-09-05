@@ -25,6 +25,26 @@
   }
 }
 
+.social__item:last-child svg {
+  stroke: $icons_social-colors;
+}
+
+
+.social__item svg {
+  &:hover {
+    stroke: $main_button-color;
+  }
+
+  &:focus {
+    stroke: $main_button-color;
+  }
+
+  &:active {
+    stroke: $main_button-color;
+    opacity: 0.3;
+  }
+}
+
 .social__item:first-child svg {
   @media (min-width: $tablet-resolution) {
     width: 30px;
@@ -46,8 +66,8 @@
   @media (min-width: $tablet-resolution) {
     width: 31px;
     height: 35px;
-    margin-left: -13px;
-    margin-top: -5px;
+    margin-left: -15px;
+    margin-top: -8px;
   }
 }
 

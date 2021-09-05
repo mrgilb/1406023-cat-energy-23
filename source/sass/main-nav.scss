@@ -99,6 +99,23 @@
 .main-nav__list--nojs {
   position: static;
   margin-top: 0;
+
+  @media (min-width: $tablet-resolution) {
+    margin-top: 20px;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    margin-top: 48px;
+  }
+}
+
+.main-nav__list--nojs .main-nav__list--catalog {
+  position: static;
+  margin-top: 0;
+}
+
+.main-nav__button--nojs {
+  display: none;
 }
 
 .main-nav__list--catalog {
@@ -192,6 +209,18 @@
   text-transform: uppercase;
   color: $alt-font_color;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-resolution) {
     font-size: 18px;

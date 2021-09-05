@@ -5,4 +5,17 @@
   background-color: $main_button-color;
   border: none;
   text-align: center;
+
+  &:hover {
+    background-color: $main_button-hover_active;
+  }
+
+  &:focus {
+    background-color: $main_button-hover_active;
+  }
+
+  &:active {
+    background-color: $main_button-hover_active;
+    color: rgba(100%, 100%, 100%, 0.3);
+  }
 }

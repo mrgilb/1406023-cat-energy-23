@@ -1,7 +1,12 @@
 .promo {
-  background: linear-gradient(to bottom, transparent -2.1%, rgba(104, 183, 56, 0.85) -2.1%);
+  background: center/320px url("../img/greencat-bg.png"), linear-gradient(to top, transparent 37%, #62a637 37%);
+  background-position-y: top;
   background-repeat: no-repeat;
-  background-size: 100% 303px;
+
+  @media (min-resolution: 2dppx) {
+    background: no-repeat center/320px url("../img/greencat-bg@2x.png"), linear-gradient(to top, transparent 37%, #62a637 37%);
+    background-position-y: top;
+  }
 
   @media (min-width: $tablet-resolution) {
     background-image: none;
@@ -90,6 +95,7 @@
 
 .promo__img-product {
   margin-top: 28px;
+  width: 280px;
 
   @media (min-width: $tablet-resolution) {
     width: 708px;
@@ -110,7 +116,7 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  padding: 10px 44px 9px 44px;
+  padding: 10px 10px 9px 10px;
 
   @media (min-width: $tablet-resolution) {
     grid-row: 3/4;
