@@ -129,6 +129,10 @@ exports.build = build;
 
 
 exports.default = gulp.series(
+  clean,
+  copy,
+  createWebp,
+  optimizeImages,
   gulp.parallel(
     styles,
     scripts

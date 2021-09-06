@@ -2,6 +2,7 @@
   background-color: $main-background;
   display: grid;
   grid-template-columns: 1fr $mobile-width 1fr;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-resolution) {
     grid-template-columns: 1fr $tablet-width 1fr;
