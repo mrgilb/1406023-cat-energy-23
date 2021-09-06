@@ -217,6 +217,10 @@
   margin-top: 45px;
   position: relative;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-resolution) {
     font-size: 20px;
     line-height: 30px;
@@ -228,6 +232,16 @@
   @media (min-width: $desktop-resolution) {
     margin-top: 26px;
   }
+}
+
+.services__button:hover::after {
+  background-image: url("../img/icons/arrow-long.svg");
+  width: 32px;
+}
+
+.services__button:focus::after {
+  background-image: url("../img/icons/arrow-long.svg");
+  width: 32px;
 }
 
 .services__button::after {
