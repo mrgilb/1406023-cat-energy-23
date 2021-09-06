@@ -25,12 +25,12 @@
   }
 }
 
-.social__item:last-child svg {
+.social-list__item:last-child svg {
   stroke: $icons_social-colors;
 }
 
 
-.social__item svg {
+.social-list__item svg {
   &:hover {
     stroke: $main_button-color;
   }
@@ -45,7 +45,7 @@
   }
 }
 
-.social__item:first-child svg {
+.social-list__item:first-child svg {
   @media (min-width: $tablet-resolution) {
     width: 30px;
     height: 22px;
@@ -53,7 +53,7 @@
   }
 }
 
-.social__item:nth-child(2) svg {
+.social-list__item:nth-child(2) svg {
   @media (min-width: $tablet-resolution) {
     width: 23px;
     height: 23px;
@@ -62,7 +62,7 @@
 }
 
 
-.social__item:nth-child(3) svg {
+.social-list__item:nth-child(3) svg {
   @media (min-width: $tablet-resolution) {
     width: 31px;
     height: 35px;
@@ -71,7 +71,7 @@
   }
 }
 
-.social__item:nth-child(2) {
+.social-list__item:nth-child(2) {
   margin-left: 36px;
   margin-right: 33px;
 
