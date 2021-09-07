@@ -14,7 +14,7 @@ const specialColor = document.querySelector(".example__special-background");
 const screenWidth = window.screen.width;
 const controls = document.querySelector(".exampe__controls")
 
-navToggle.classList.remove("main-nav__button--nojs")
+navToggle.classList.remove("main-nav__toggle--nojs")
 navMain.classList.remove("main-nav__list--nojs");
 navMain.classList.add("main-nav__list--disabled");
 
