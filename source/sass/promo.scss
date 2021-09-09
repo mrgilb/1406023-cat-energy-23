@@ -17,7 +17,7 @@
   }
 }
 
-.promo .wrapper {
+.promo--wrapper {
   min-height: 480px;
   display: grid;
 
@@ -87,7 +87,7 @@
 
 .promo__img-position {
   @media (min-width: $desktop-resolution) {
-    grid-row: 3/4;
+    grid-row: 1/4;
     grid-column: 2/3;
     position: relative;
   }
@@ -106,9 +106,8 @@
   @media (min-width: $desktop-resolution) {
     width: 552px;
     height: auto;
-    position: absolute;
-    margin-top: -262px;
-    margin-left: -162px;
+    margin-top: 13px;
+    margin-left: -163px;
   }
 }
 

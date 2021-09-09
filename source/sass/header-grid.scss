@@ -6,18 +6,17 @@
   @media (min-width: $tablet-resolution) {
     width: $tablet-width;
     margin: 0 auto;
-    flex-wrap: nowrap;
-    justify-content: start;
-    column-gap: 95px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
   }
 
   @media (min-width: $desktop-resolution) {
+    grid-template-columns: 1fr 1fr;
     width: $desktop-width;
-    justify-content: space-between;
   }
 }
 
-.header-grid .wrapper {
+.header-grid .header-grid--wrapper {
   @media (min-width: $tablet-resolution) {
     width: auto;
     margin: 0;

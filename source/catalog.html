@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -27,7 +26,7 @@
   </svg>
   <header class="page-header">
     <nav class="main-nav header-grid">
-      <div class="wrapper">
+      <div class="wrapper main-nav--wrapper header-grid--wrapper">
         <a class="logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo/logo-icon-desktop.svg">
@@ -42,7 +41,7 @@
         </a>
       <button class="main-nav__toggle main-nav__toggle--disbled main-nav__toggle--nojs">
         <span class="main-nav__burger"></span>
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="main-nav--visually-hidden">Открыть меню</span>
       </button>
     </div>
       <ul class="main-nav__list main-nav__list--nojs main-nav__list--active">
@@ -256,9 +255,9 @@
     </section>
     <section class="additional-product">
       <h2 class="additional-product__headline">
-        <span class="wrapper">Дополнительные товары</span>
+        <span class="wrapper additional-product__headline--wrapper">Дополнительные товары</span>
       </h2>
-      <div class="wrapper">
+      <div class="wrapper additional-product--wrapper">
         <ul class="additional-product__list">
           <li class="additional-product__item">
             <h3 class="additional-product__title">Сахарозаменитель</h3>
@@ -293,7 +292,7 @@
             <a class="additional-product__button button" href="form.html">заказать</a>
           </li>
         </ul>
-        <div class="aside">
+        <div class="aside additional-product--aside">
           <p class="aside__text">Закажите все<br>
             и получите чехол для<br>
             кота в подарок!
@@ -303,24 +302,36 @@
     </section>
   </main>
   <footer class="main-footer">
-    <section class="address address--catalog">
-      <div class="wrapper">
-        <h3 class="visually-hidden">Наш адрес</h3>
+    <section class="address main-footer--address address--catalog ">
+      <div class="wrapper address--wrapper">
+        <h3 class="address--visually-hidden">Наш адрес</h3>
       <p class="address__tittle">приглашаем<br> к сотрудничеству дилеров!</p>
       <address class="address__text">ул. Большая
         Конюшенная, д. 19/8
         <span>Санкт-Петербург</span></address>
       </div>
     </section>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627212394809!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-    <div class="wrapper">
+    <div class="map main-footer--map">
+      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627212394809!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+      <div class="map__container">
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop-map.webp 1x, img/desktop-map@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-map.webp 1x, img/tablet-map.webp 2x">
+          <source type="image/webp" srcset="img/mobile-map.webp 1x, img/mobile-mape@2x.webp 2x">
+          <source media="(min-width: 1440px)" srcset="img/desktop-map.png 1x, img/desktop-map@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/tablet-map.png 1x, img/tablet-map@2x.png 2x">
+          <img class="map__static-map" src="img/mobile-map.png" srcset="img/mobile-map@2x.png 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8">
+        </picture>
+      </div>
+    </div>
+    <div class="wrapper main-footer--wrapper main-footer--catalog">
       <a class="alt-main-logo" href="#">
         <img src="img/logo/mainlogo.svg" width="128" height="24" alt="logo">
       </a>
       <ul class="social-list">
         <li class="social-list__item">
           <a href="">
-            <span class="visually-hidden">Вконтакте</span>
+            <span class="social-list__item--visually-hidden">Вконтакте</span>
             <svg width="23" height="16">
               <use xlink:href="#vkontakte"></use>
             </svg>
@@ -328,7 +339,7 @@
         </li>
         <li class="social-list__item">
           <a href="">
-            <span class="visually-hidden">Инстаграм</span>
+            <span class="social-list__item--visually-hidden">Инстаграм</span>
             <svg width="16" height="16">
               <use xlink:href="#instagram"></use>
             </svg>
@@ -336,7 +347,7 @@
         </li>
         <li class="social-list__item">
           <a href="">
-            <span class="visually-hidden">Фейсбук</span>
+            <span class="social-list__item--visually-hidden">Фейсбук</span>
             <svg width="22" height="22">
               <use xlink:href="#facebook"></use>
             </svg>
@@ -347,12 +358,11 @@
         HTML Academy
         <svg class="producer-logo__icon">
           <use xlink:href="#html-academy"></use>
-        </svg>
+          </svg>
       </a>
     </div>
   </footer>
   <script src="js/script.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 
 </html>

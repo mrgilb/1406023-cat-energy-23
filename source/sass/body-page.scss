@@ -6,7 +6,7 @@
   padding: 0;
 
   @media (min-width: $desktop-resolution) {
-    background: linear-gradient(to right, #68b738 100%, #68b738 0%);
+    background: linear-gradient(to bottom, #68b738 98%, #ffffff 0%);
     background-image: url("../img/greencat-bg-desktop.png");
     background-repeat: no-repeat;
     background-size: 1044px 694px;
@@ -19,8 +19,15 @@
   }
 
   @media (min-width: 1441px) {
+    background: linear-gradient(to bottom, #68b738 25%, #ffffff 0%);
+    background-image: url("../img/greencat-bg-desktop.png");
+    background-repeat: no-repeat;
     background-size: 50%;
     background-position-x: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/greencat-bg-desktop@2x.png");
+    }
   }
 }
 
@@ -32,15 +39,3 @@
   }
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

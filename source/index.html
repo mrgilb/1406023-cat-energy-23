@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link type="image/x-icon" href="favicon.ico" rel="icon">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -25,7 +24,7 @@
   </svg>
     <header class="page-header">
         <nav class="main-nav header-grid">
-          <div class="wrapper">
+          <div class="wrapper main-nav--wrapper header-grid--wrapper">
             <a class="logo">
               <picture>
                 <source media="(min-width: 1440px)" srcset="img/logo/logo-icon-desktop.svg">
@@ -40,7 +39,7 @@
             </a>
           <button class="main-nav__toggle main-nav__toggle--disbled main-nav__toggle--nojs">
             <span class="main-nav__burger"></span>
-            <span class="visually-hidden">Открыть меню</span>
+            <span class="main-nav--visually-hidden">Открыть меню</span>
           </button>
         </div>
           <ul class="main-nav__list main-nav__list--nojs main-nav__list--active">
@@ -52,7 +51,7 @@
     </header>
     <main class="main-page index">
       <section class="promo">
-        <div class="wrapper">
+        <div class="wrapper promo--wrapper">
           <h1 class="promo__tagline">Функциональное<br> питание для котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <div class="promo__img-position">
@@ -69,7 +68,7 @@
         </div>
       </section>
       <section class="services wrapper">
-        <h2 class="visually-hidden">Нашу услуги</h2>
+        <h2 class="services--visually-hidden">Нашу услуги</h2>
         <ul class="services__list">
           <li class="services__item">
             <h3 class="services__title">похудение</h3>
@@ -84,7 +83,7 @@
         </ul>
       </section>
       <section class="methodology wrapper">
-        <h2 class="visually-hidden">Наша методология</h2>
+        <h2 class="methodology--visually-hidden">Наша методология</h2>
         <p class="methodology__headline">Как это работает</p>
         <ol class="methodology__list">
           <li class="methodology__item">
@@ -108,7 +107,7 @@
         </ol>
       </section>
       <section class="example">
-        <div class="wrapper">
+        <div class="wrapper example--wrapper">
           <h2 class="example__tittle">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и  <br> по-прежнему спит по 16 часов в день.</p>
           <ul class="example__list">
@@ -120,7 +119,7 @@
             <div class="example__image-container-fat-cat">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-fat-desktop.webp 1x, img/cat-fat-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-fat-tablet.webp 1x, img/cat-fat-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/cat-fat-mobile.webp 1x, img/cat-fat-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/cat-fat-desktop.png 1x, img/cat-fat-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/cat-fat-tablet.png 1x, img/cat-fat-tablet@2x.png 2x">
@@ -140,7 +139,7 @@
             <div class="example__controls">
               <button class="example__button example__button--before">было</button>
               <label>
-                <input class="example__range" value="100" oninput="imageSize()" type="range">
+                <input class="example__range" value="100" oninput="imageSize()" type="range" aria-label="Передвиньте, чтобы увидеть изменения">
               </label>
               <button class="example__button example__button--after">стало</button>
             </div>
@@ -149,24 +148,36 @@
       </section>
     </main>
     <footer class="main-footer">
-      <section class="address">
-        <div class="wrapper">
-          <h3 class="visually-hidden">Наш адрес</h3>
+      <section class="address main-footer--address">
+        <div class="wrapper address--wrapper">
+          <h3 class="address--visually-hidden">Наш адрес</h3>
         <p class="address__tittle">приглашаем<br> к сотрудничеству дилеров!</p>
         <address class="address__text">ул. Большая
           Конюшенная, д. 19/8
           <span>Санкт-Петербург</span></address>
         </div>
       </section>
-      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627212394809!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-      <div class="wrapper">
+      <div class="map main-footer--map">
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.320858716185526!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627212394809!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map__container">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/desktop-map.webp 1x, img/desktop-map@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/tablet-map.webp 1x, img/tablet-map.webp 2x">
+            <source type="image/webp" srcset="img/mobile-map.webp 1x, img/mobile-mape@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/desktop-map.png 1x, img/desktop-map@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/tablet-map.png 1x, img/tablet-map@2x.png 2x">
+            <img class="map__static-map" src="img/mobile-map.png" srcset="img/mobile-map@2x.png 2x" width="320" height="362" alt="ул. Большая Конюшенная, д. 19/8">
+          </picture>
+        </div>
+      </div>
+      <div class="wrapper main-footer--wrapper">
         <a class="alt-main-logo" href="#">
           <img src="img/logo/mainlogo.svg" width="128" height="24" alt="logo">
         </a>
         <ul class="social-list">
           <li class="social-list__item">
             <a href="">
-              <span class="visually-hidden">Вконтакте</span>
+              <span class="social-list__item--visually-hidden">Вконтакте</span>
               <svg width="23" height="16">
                 <use xlink:href="#vkontakte"></use>
               </svg>
@@ -174,7 +185,7 @@
           </li>
           <li class="social-list__item">
             <a href="">
-              <span class="visually-hidden">Инстаграм</span>
+              <span class="social-list__item--visually-hidden">Инстаграм</span>
               <svg width="16" height="16">
                 <use xlink:href="#instagram"></use>
               </svg>
@@ -182,7 +193,7 @@
           </li>
           <li class="social-list__item">
             <a href="">
-              <span class="visually-hidden">Фейсбук</span>
+              <span class="social-list__item--visually-hidden">Фейсбук</span>
               <svg width="22" height="22">
                 <use xlink:href="#facebook"></use>
               </svg>
@@ -197,7 +208,6 @@
         </a>
       </div>
     </footer>
-    <script src="js/script.js"></script>
     <script src="js/script.min.js"></script>
   </body>
 </html>
