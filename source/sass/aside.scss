@@ -2,11 +2,10 @@
   min-width: 280px;
   min-height: 289px;
   margin-top: 38px;
-  background-image: url("../img/bg-present.png");
-  background-size: 280px;
+  background: no-repeat center/280px url("../img/bg-present.png"), linear-gradient(to bottom, $main_button-color 100%, $main_button-color 100%);
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-present@2x.png");
+    background: no-repeat center/280px url("../img/bg-present@2x.png"), linear-gradient(to bottom, $main_button-color 100%, $main_button-color 100%);
   }
   background-repeat: no-repeat;
   display: flex;
@@ -18,22 +17,23 @@
   @media (min-width: $tablet-resolution) {
     flex-direction: row;
     margin-top: 64px;
-    background-image: url("../img/bg-present-tablet.png");
-    background-size: 707px;
+    min-height: 201px;
+    margin-bottom: 91px;
+    background: no-repeat top/707px url("../img/bg-present-tablet.png"), linear-gradient(to bottom, $main_button-color 100%, $main_button-color 100%);
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-present-tablet@2x.png");
+      background: no-repeat top/707px url("../img/bg-present-tablet@2x.png"), linear-gradient(to bottom, $main_button-color 100%, $main_button-color 100%);
     }
   }
 
   @media (min-width: $desktop-resolution) {
-    background-image: url("../img/bg-present-desktop.png");
-    background-size: 245px;
+    background: no-repeat top/245px url("../img/bg-present-desktop.png"), linear-gradient(to bottom, $main_button-color 100%, $main_button-color 100%);
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-present-desktop@2x.png");
+      background: no-repeat top/245px url("../img/bg-present-desktop@2x.png"), linear-gradient(to bottom, $main_button-color 100%, $main_button-color 100%);
     }
     margin-top: 64px;
+    min-width: 245px;
   }
 }
 
@@ -70,13 +70,15 @@
 
   @media (min-width: $tablet-resolution) {
     text-align: start;
-    margin-top: -40px;
+    margin-top: 51px;
     margin-right: 126px;
+    margin-left: 290px;
   }
 
   @media (min-width: $desktop-resolution) {
-    margin-top: 186px;
-    margin-right: 80px;
+    margin-top: 187px;
+    margin-right: 44px;
+    margin-left: 40px;
     text-align: center;
   }
 }

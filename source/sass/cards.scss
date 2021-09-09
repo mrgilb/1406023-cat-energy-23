@@ -61,6 +61,7 @@
   }
 
   @media (min-width: $desktop-resolution) {
+    background: linear-gradient(to bottom, #ffffff 15%, $main-background 0%);
     width: 245px;
   }
 }
@@ -253,28 +254,6 @@
   }
 }
 
-.cards__item .button {
-  padding: 8px 109px 8px 109px;
-  margin-top: 24px;
-  grid-column: 1/3;
-
-  @media (min-width: $tablet-resolution) {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    font-size: 16px;
-    line-height: 20px;
-    padding: 10px 93px 10px 93px;
-    margin-bottom: 19px;
-  }
-
-  @media (min-width: $desktop-resolution) {
-    margin-top: 27px;
-    padding: 10px 10px 10px 10px;
-    margin-right: 39px;
-    margin-left: 39px;
-  }
-}
-
 .cards__text {
   margin: 0;
   margin-top: 7px;
@@ -297,7 +276,26 @@
 }
 
 .cards__button {
+  padding: 8px 109px 8px 109px;
+  margin-top: 24px;
+  grid-column: 1/3;
   grid-row: 3/4;
+
+  @media (min-width: $tablet-resolution) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 93px 10px 93px;
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: $desktop-resolution) {
+    margin-top: 27px;
+    padding: 10px 10px 10px 10px;
+    margin-right: 39px;
+    margin-left: 39px;
+  }
 }
 
 .cards__last-button {

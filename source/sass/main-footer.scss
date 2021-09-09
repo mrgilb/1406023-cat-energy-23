@@ -19,7 +19,7 @@
   margin-top: 35px;
 }
 
-.main-footer .address {
+.main-footer--address {
   grid-column: 1/4;
 
   @media (min-width: $tablet-resolution) {
@@ -37,7 +37,7 @@
   }
 }
 
-.main-footer .map {
+.main-footer--map {
   grid-column: 1/4;
 
   @media (min-width: $tablet-resolution) {
@@ -51,7 +51,7 @@
   }
 }
 
-.main-footer .wrapper {
+.main-footer--wrapper {
   grid-row: 3/4;
   grid-column: 1/4;
   display: flex;
@@ -64,5 +64,6 @@
     grid-column: 2/3;
     grid-row: 3/4;
     width: 100%;
+    margin-top: -3px;
   }
 }
