@@ -53,7 +53,7 @@
 }
 
 .methodology__item {
-  font-family: $alt-font;
+  font-family: $alt-font, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -81,7 +81,7 @@
   @media (min-width: $tablet-resolution) {
     display: inline;
     position: absolute;
-    font-family: $main-font;
+    font-family: $main-font, $alt-font, sans-serif;
     font-size: 280px;
     line-height: 280px;
     font-weight: 400;
