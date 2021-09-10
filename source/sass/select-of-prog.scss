@@ -807,7 +807,7 @@
 }
 
 .select-of-prog__input {
-  font-family: $main-font;
+  font-family: $main-font, $alt-font, sans-serif;
   text-transform: uppercase;
   color: $main-font_color;
   font-size: 16px;
@@ -854,25 +854,25 @@
 }
 
 .select-of-prog__input::placeholder {
-  font-family: $main-font;
+  font-family: $main-font, $alt-font, sans-serif;
   text-transform: uppercase;
   color: $main-font_color;
 }
 
 .select-of-prog__list input::placeholder {
-  font-family: $main-font;
+  font-family: $main-font, $alt-font, sans-serif;
   text-transform: uppercase;
   color: $main-font_color;
 }
 
 .select-of-prog__item [type="text"] {
-  font-family: $main-font;
+  font-family: $main-font, $alt-font, sans-serif;
   text-transform: uppercase;
   color: $main-font_color;
 }
 
 .select-of-prog__item [type="number"] {
-  font-family: $main-font;
+  font-family: $main-font, $alt-font, sans-serif;
   text-transform: uppercase;
   color: $main-font_color;
 }
@@ -886,7 +886,7 @@
 }
 
 .select-of-prog__comment {
-  font-family: $main-font;
+  font-family: $main-font, $alt-font, sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
@@ -926,7 +926,7 @@
 }
 
 .select-of-prog__comment::placeholder {
-  font-family: $main-font;
+  font-family: $main-font, $alt-font, sans-serif;
   color: $main-font_color;
 }
 
@@ -942,7 +942,7 @@
 }
 
 .select-of-prog__button {
-  font-family: $main-font;
+  font-family: $main-font, $alt-font, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -967,7 +967,7 @@
 
 .select-of-prog__aside {
   display: block;
-  font-family: $alt-font;
+  font-family: $alt-font, sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;

@@ -122,6 +122,7 @@
   @media (min-width: $desktop-resolution) {
     min-width: 896px;
     margin-top: 65px;
+    margin-bottom: 90px;
   }
 }
 
@@ -188,7 +189,7 @@
 }
 
 .additional-product__desc {
-  font-family: $alt-font;
+  font-family: $alt-font, sans-serif;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;

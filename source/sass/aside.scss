@@ -3,6 +3,8 @@
   min-height: 289px;
   margin-top: 38px;
   background: no-repeat center/280px url("../img/bg-present.png"), linear-gradient(to bottom, $main_button-color 100%, $main_button-color 100%);
+  background-color: $main_button-color;
+  align-self: center;
 
   @media (min-resolution: 2dppx) {
     background: no-repeat center/280px url("../img/bg-present@2x.png"), linear-gradient(to bottom, $main_button-color 100%, $main_button-color 100%);
@@ -62,7 +64,7 @@
   text-align: center;
   display: block;
   margin-bottom: 43px;
-  font-family: $alt-font;
+  font-family: $alt-font, sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
